@@ -70,7 +70,7 @@ custom-chatbot/
 
 | Customization Panel | Chatbot UI |
 |---------------------|------------|
-| ![Panel](./src//components//assets/28.11.2024_02.12.06_REC.png/300x400) | ![Chatbot](./src/components//assets/28.11.2024_02.11.20_REC.png/300x400) |
+| ![Panel](./src//components//assets/28.11.2024_02.12.06_REC.png) | ![Chatbot](./src/components//assets/28.11.2024_02.11.20_REC.png) |
 
 ---
 
