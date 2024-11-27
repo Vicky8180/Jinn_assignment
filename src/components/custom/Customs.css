@@ -1,0 +1,32 @@
+.custom_container {
+  width: 50vh;
+  height: 86vh;
+  padding-bottom: 2vh;
+  margin-left: 5vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vh;
+  align-items: center;
+  gap: 2vh;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.custom_container::-webkit-scrollbar {
+  display: none;
+}
+
+.controller {
+  height: 9%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+}

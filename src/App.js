@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import ChatBox from "./components/chat/chatBox";
+import Customs from "./components/custom/Customs";
+import { useDispatch } from "react-redux";
+import { setDefault } from "./components/store/slices/updateColor";
+import { setDefaultText } from "./components/store/slices/updateText";
+import { triggerRender } from "./components/store/slices/triggerRender";
+import TextFont from "./components/others/textFont";
 function App() {
+  const dispatch = useDispatch();
+
+  const setDefaultFun = () => {
+    dispatch(setDefault());
+    dispatch(setDefaultText());
+    dispatch(triggerRender());
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div className="App-header">
+          <Customs />
+          <div className="middle">
+            <TextFont />
+            <button onClick={setDefaultFun}>Set Default</button>
+          </div>
+          <ChatBox />
+        </div>
+      </div>
+    </>
   );
 }
 
